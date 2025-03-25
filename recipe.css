@@ -1,142 +1,176 @@
+body{
+  background-image: url('Recipe.jpg');
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-h1 {
-
-  font-size: 60px;
+.head{
+  display: flex;
+  position:  absolute;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 50px 1000px;
+}
+.Essen{
+  display: flex;
+  position: absolute;
   color: white;
-    text-align:center;
-    font-style: italic;
-
+  font-family: monospace;
+  font-size: 40px;
+  top: 2px;
+  left: 112px;
 }
 
-h2{
-
-  font-size: 30px;
-  color: white;
-      text-align:center;
-       font-style: italic;
-
-}
-
-
-
-html {
-  height:100%;
-}
-
-body {
-  margin:0;
-}
-
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-20deg, red 50%, #000 50%);
-  bottom:0;
-  left:-100%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-}
-
-.bg3 {
-  animation-duration:5s;
-}
-
-.content {
-  background-color:rgba(255,255,255,.8);
-  border-radius:.25em;
-  box-shadow:0 0 .25em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
-  text-align:center;
-  top:50%;
-  transform:translate(-50%, -50%);
-}
-
-
-@keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
+.logo{
+  display: flex;
+  position: absolute;
+  top: 22px;
+  left: 7px;
 }
 
 
 
-
-
-
-div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
+.Home{
+  display: flex;
+  position: absolute;
   text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-}
-
-
-
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
-/* Make the image to responsive */
-.image {
-  width: 100%;
-  height: auto;
-}
-
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 40px;
+  left: 1112px;
   background-color: transparent;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-  transition: .3s ease;
-}
-
-/* When you mouse over the container, the overlay text will "zoom" in display */
-.container:hover .overlay {
-  transform: scale(1);
-}
-
-/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
-.text {
   color: white;
+  font-family: monospace;
   font-size: 20px;
+  border: 2px solid  white;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.Books{
+  display: flex;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  text-decoration: none;
+  left: 1230px;
+  top: 40px;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+.Recipe{
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  left: 1350px;
+  top: 40px;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 20px;
 }
 
 
 
+.Home:hover{
+  background-color: rgba(7, 7, 7, 0.186);
+  color: black;
+}
+
+.Books:hover{
+  background-color: rgba(7, 7, 7, 0.186);
+  color: red;
+}
+
+.Recipe:hover{
+  background-color: rgba(7, 7, 7, 0.186);
+  color: yellow;
+}
+
+.mault{
+  display: flex;
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  font-size: 40px;
+  top: 275px;
+  left: 300px;
+  padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.165);
+  border: solid 2px white;
+  border-radius: 30px;
+}
+
+
+.labskaus{
+  display: flex;
+  position: absolute;
+  top: 280px;
+  left: 630px;
+  padding: 20px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+   background-color: rgba(0, 0, 0, 0.165);
+}
+
+.bratwurst{
+  display: flex;
+  position: absolute;
+  top: 275px;
+  left: 950px;
+  padding: 20px 20px;
+  padding-top: 0px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.165);
+}
+
+.mault:hover{
+  background-color: rgba(0, 0, 0, 0.439);
+  color: black;
+}
+
+.labskaus:hover{
+  background-color: rgba(0, 0, 0, 0.439);
+  color: black;
+}
+
+.bratwurst:hover{
+  background-color: rgba(0, 0, 0, 0.439);
+  color: black;
+}
+
+.maultext{
+  display: flex;
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  top: 200px;
+  left: 350px;
+}
+
+.labtext{
+  display: flex;
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  top: 200px;
+  left: 700px;
+}
+
+.brattext{
+  display: flex;
+  position: absolute;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  top: 200px;
+  left: 1030px;
+}
