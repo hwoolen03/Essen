@@ -7,35 +7,35 @@ body{
 
 .head{
   display: flex;
-  position: fixed;
+  position:  absolute;
   background: rgba(0, 0, 0, 0.1);
   padding: 50px 1000px;
 }
 .Essen{
   display: flex;
-  position: fixed;
+  position: absolute;
   color: white;
   font-family: monospace;
   font-size: 40px;
-  top: 10px;
-  left: 120px;
+  top: 2px;
+  left: 112px;
 }
 
 .logo{
   display: flex;
-  position: fixed;
-  top: 30px;
-  left: 15px;
+  position: absolute;
+  top: 22px;
+  left: 7px;
 }
 
 
 
-.Books{
+.Home{
   display: flex;
   position: absolute;
   text-decoration: none;
   top: 40px;
-  left: 1140px;
+  left: 1112px;
   background-color: transparent;
   color: white;
   font-family: monospace;
@@ -49,7 +49,23 @@ body{
   display: flex;
   position: absolute;
   text-decoration: none;
-  left: 970px;
+  top: 40px;
+  left: 1005px;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  border: 2px solid  white;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+
+
+.Books{
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  left: 1230px;
   top: 40px;
   background-color: transparent;
   color: white;
@@ -76,27 +92,20 @@ body{
 }
 
 
-.Home{
-  display: flex;
-  position: absolute;
-  text-decoration: none;
-  left: 1250px;
-  top: 40px;
-  background-color: transparent;
-  color: white;
-  font-family: monospace;
-  font-size: 20px;
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 5px 20px;
-}
-
-.Books:hover{
-  background-color: rgba(7, 7, 7, 0.186);
-  color: rgb(234, 255, 0);
-}
 
 .Home:hover{
+  background-color: rgba(7, 7, 7, 0.186);
+  color: black;
+}
+
+.About:hover{
+  background-color: rgba(7, 7, 7, 0.186);
+  color: yellow;
+}
+
+
+
+.Books:hover{
   background-color: rgba(7, 7, 7, 0.186);
   color: red;
 }
@@ -105,6 +114,7 @@ body{
   background-color: rgba(7, 7, 7, 0.186);
   color: yellow;
 }
+
 
 .Labsvid{
   display: flex;
